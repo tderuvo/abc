@@ -1,7 +1,11 @@
 Abc::Application.routes.draw do
+  get "welcome/home"
+
   resources :users
 
   resources :tickets
+  
+  root :to => "welcome#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
